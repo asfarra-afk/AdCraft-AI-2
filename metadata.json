@@ -1,0 +1,6 @@
+{
+  "name": "AdCraft AI - Direct Response Ad Studio",
+  "description": "Expert Ad Copywriter & Direct Response Marketer that generates unique 5-pillar ad concepts, full 30-60s scripts, captions, and punchy image copy from documents or text in Bengali and English.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}
