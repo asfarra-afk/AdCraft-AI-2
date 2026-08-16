@@ -197,8 +197,6 @@ export default function App() {
       <Navbar
         lang={lang}
         setLang={setLang}
-        savedCount={savedAds.length}
-        onOpenHistory={() => setIsHistoryOpen(true)}
         onReset={handleReset}
         hasResult={!!adData}
       />
