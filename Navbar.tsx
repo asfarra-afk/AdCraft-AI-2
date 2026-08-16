@@ -4,15 +4,14 @@ import { FileText, Globe, Layers, Sparkles } from "lucide-react";
 interface NavbarProps {
   lang: "bn" | "en";
   setLang: (lang: "bn" | "en") => void;
-  onReset: () => void;
-  hasResult: boolean;
+
 }
 
 export const Navbar: React.FC<NavbarProps> = ({
   lang,
   setLang,
-  onReset,
-  hasResult,
+ 
+
 }) => {
   return (
     <header className="sticky top-0 z-40 w-full bg-white border-b border-slate-200 text-slate-800 shadow-xs">
@@ -71,18 +70,6 @@ export const Navbar: React.FC<NavbarProps> = ({
             </button>
           </div>
 
-          {/* Reset / New Ad */}
-          {hasResult && (
-            <button
-              onClick={onReset}
-              className="flex items-center gap-1 px-3 py-1.5 rounded-lg text-xs font-semibold bg-slate-100 hover:bg-slate-200 text-slate-700 border border-slate-200 transition"
-            >
-              <FileText className="w-3.5 h-3.5 text-slate-600" />
-              <span className="hidden sm:inline">
-                {lang === "bn" ? "নতুন অ্যাড" : "New Ad"}
-              </span>
-            </button>
-          )}
         </div>
       </div>
     </header>
